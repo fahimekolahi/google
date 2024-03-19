@@ -1,6 +1,10 @@
 import logo from '../src/unnamed.png';
 import google from '../src/googlelogo_color_272x92dp.png'
 import './App.css';
+import search from './search.svg'
+import keyboard from './keyboard.svg'
+import mic from './mic.svg'
+import camera from './camera.svg'
 
 function App() {
   return (
@@ -26,8 +30,28 @@ function App() {
           <img src={google} />
         </div>
 
-        <div className="w-[582px] h-[46px] border border-[#84843] rounded-[1rem] mx-auto">
-          <input className="w-full h-full"></input>
+        <div className="w-[582px] h-[46px] border border-[#84843] rounded-[1.4rem] mx-auto">
+          <div className="flex justify-between items-center mx-4 my-3">
+            <div className="flex items-center">
+              <img src={search} />
+            </div>
+
+            <input className="w-[450px] h-full z-10 ">
+
+
+
+
+</input>
+
+
+            <div className="flex gap-5 items-center">
+             <a href="#"> <img src={keyboard} /></a>
+             <a href="#"> <img src={mic} /></a>
+             <a href="#"> <img src={camera} /></a>
+
+            </div>
+          </div>
+         
         </div>
 
 
@@ -35,7 +59,7 @@ function App() {
           <button className="bg-[#F8F9FA] w-[116px] h-[36px] rounded-[4px] text-[#252139]"> جستجوی Google</button>
           <button className="bg-[#F8F9FA] w-[116px] h-[36px] rounded-[4px] text-[#252139]">یا بخت یا اقبال</button>
         </div>
-        <p className="text-[13px]">Google  به این زبان ارائه می شود : <a>English</a></p>
+        <p className="text-[13px]">Google  به این زبان ارائه می شود : <a href="#" className="text-[#1A2DCC]">English</a></p>
 
 
       </main>
@@ -52,7 +76,7 @@ function App() {
           <a href="#">حریم خصوصی</a>
           <a href="#">شرایط</a>
           <a href="#">تنظیمات</a>
-          
+
         </div>
 
       </footer>
