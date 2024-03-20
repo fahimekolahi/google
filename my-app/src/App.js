@@ -30,13 +30,13 @@ function App() {
           <img src={google} />
         </div>
 
-        <div className="w-[582px] h-[46px] border border-[#84843] rounded-[1.4rem] mx-auto">
+        <div className="sm:w-[582px] w-[80%] h-[46px] border border-[#84843] rounded-[1.4rem] mx-auto">
           <div className="flex justify-between items-center mx-4 my-3">
             <div className="flex items-center">
               <img src={search} />
             </div>
 
-            <input className="w-[450px] h-full z-10 ">
+            <input className="sm:w-[450px] w-[60%] h-full z-10 ">
 
 
 
